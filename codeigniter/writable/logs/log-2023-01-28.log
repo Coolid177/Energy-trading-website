@@ -1,0 +1,76 @@
+ERROR - 2023-01-28 04:19:12 --> mysqli_sql_exception: Table 'Data.user_notifications' doesn't exist in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/NotificationsController.php(42): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\NotificationsController->viewNotifications()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-28 04:19:12 --> Table 'Data.user_notifications' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/NotificationsController.php(42): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\NotificationsController->viewNotifications()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 06:01:03 --> syntax error, unexpected token ":", expecting ";"
+in APPPATH/Views/profile/messages.php on line 20.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/MessagesController.php(42): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->openConversation()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 06:01:14 --> syntax error, unexpected token ":", expecting ";"
+in APPPATH/Views/profile/messages.php on line 20.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/MessagesController.php(42): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->openConversation()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 06:01:25 --> syntax error, unexpected token ":", expecting ";"
+in APPPATH/Views/profile/messages.php on line 20.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/MessagesController.php(42): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->openConversation()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 06:01:27 --> syntax error, unexpected token ":", expecting ";"
+in APPPATH/Views/profile/messages.php on line 20.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/MessagesController.php(42): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->openConversation()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 06:01:41 --> Undefined variable $vendorId
+in APPPATH/Views/profile/messages.php on line 16.
+ 1 APPPATH/Views/profile/messages.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(18): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

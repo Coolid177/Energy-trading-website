@@ -1,0 +1,266 @@
+ERROR - 2022-12-06 05:13:02 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'data' in /app/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /app/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /app/app/Filters/publicVendorProfileFilter.php(14): CodeIgniter\BaseModel->first()
+#7 /app/system/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+#8 /app/system/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+#9 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'data' in /app/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /app/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /app/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /app/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 /app/app/Filters/publicVendorProfileFilter.php(14): CodeIgniter\BaseModel->first()
+#6 /app/system/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+#7 /app/system/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+#8 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-06 05:13:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'data'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Filters/publicVendorProfileFilter.php(14): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+ 7 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 05:30:01 --> Undefined array key 0
+in APPPATH/Views/profile/privateprofile.php on line 37.
+ 1 APPPATH/Views/profile/privateprofile.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/privateprofile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProfileController.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->viewProfile()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 05:46:09 --> Undefined array key 0
+in APPPATH/Views/profile/privateprofile.php on line 37.
+ 1 APPPATH/Views/profile/privateprofile.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/privateprofile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProfileController.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->viewProfile()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 08:19:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '14' at line 1 in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/LoginModel.php(43): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/LoginController.php(88): App\Models\LoginModel->saveData()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\LoginController->createProfile()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-06 08:19:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '14' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/LoginModel.php(43): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/LoginController.php(88): App\Models\LoginModel->saveData()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\LoginController->createProfile()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 08:20:11 --> syntax error, unexpected identifier "Vendor", expecting ")"
+in APPPATH/Models/LoginModel.php on line 43.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Config/Factories.php(155): class_exists()
+ 5 SYSTEMPATH/Config/Factories.php(125): CodeIgniter\Config\Factories::locateClass()
+ 6 SYSTEMPATH/Config/Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH/Common.php(809): CodeIgniter\Config\Factories::models()
+ 8 APPPATH/Controllers/LoginController.php(76): model()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\LoginController->createProfile()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 09:00:21 --> mysqli_sql_exception: Unknown column 'Product_media.IsThumbnail' in 'where clause' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ProductModel.php(27): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ProductController.php(25): App\Models\ProductModel->getProducts()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ProductController->products()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-06 09:00:21 --> Unknown column 'Product_media.IsThumbnail' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/ProductModel.php(27): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/ProductController.php(25): App\Models\ProductModel->getProducts()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->products()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 09:08:25 --> syntax error, unexpected single-quoted string "quantity", expecting "]"
+in APPPATH/Controllers/ProductController.php on line 165.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 09:08:49 --> syntax error, unexpected single-quoted string "SellerId", expecting "]"
+in APPPATH/Controllers/ProductController.php on line 191.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 09:18:54 --> mysqli_sql_exception: Unknown column 'Product_media.IsThumbnail' in 'where clause' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ProductModel.php(28): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ProductController.php(25): App\Models\ProductModel->getProducts()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ProductController->products()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-06 09:18:54 --> Unknown column 'Product_media.IsThumbnail' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/ProductModel.php(28): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/ProductController.php(25): App\Models\ProductModel->getProducts()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->products()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 09:20:59 --> mysqli_sql_exception: Unknown column 'Product_media.IsThumbnail' in 'where clause' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ProductModel.php(28): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ProductController.php(25): App\Models\ProductModel->getProducts()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ProductController->products()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-06 09:20:59 --> Unknown column 'Product_media.IsThumbnail' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/ProductModel.php(28): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/ProductController.php(25): App\Models\ProductModel->getProducts()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->products()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 10:00:46 --> mysqli_sql_exception: Table 'data.review' doesn't exist in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ReviewModel.php(21): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ProductController.php(44): App\Models\ReviewModel->getReviews()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ProductController->product()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-06 10:00:46 --> Table 'data.review' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/ReviewModel.php(21): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/ProductController.php(44): App\Models\ReviewModel->getReviews()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 10:18:47 --> mysqli_sql_exception: Table 'data.review' doesn't exist in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ReviewModel.php(21): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ProductController.php(44): App\Models\ReviewModel->getReviews()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ProductController->product()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-06 10:18:47 --> Table 'data.review' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/ReviewModel.php(21): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/ProductController.php(44): App\Models\ReviewModel->getReviews()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 10:40:35 --> mysqli_sql_exception: Table 'data.review' doesn't exist in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ReviewModel.php(21): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ProductController.php(44): App\Models\ReviewModel->getReviews()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ProductController->product()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-06 10:40:35 --> Table 'data.review' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/ReviewModel.php(21): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/ProductController.php(44): App\Models\ReviewModel->getReviews()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 11:49:26 --> Undefined variable $products
+in APPPATH/Views/profile/createproduct.php on line 97.
+ 1 APPPATH/Views/profile/createproduct.php(97): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/createproduct.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(42): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

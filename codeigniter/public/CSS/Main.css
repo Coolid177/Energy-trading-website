@@ -1,0 +1,442 @@
+.popup{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 20%;
+    left: 50%;
+    display: none;
+}
+
+.filter-padding{
+    padding-left: 16px;  
+    padding-bottom: 4px
+}
+
+.no-pointer-events{
+    pointer-events:none;
+}
+
+.carousel-product-heigt{
+    height: 500px;
+}
+
+.list-style-none{
+    list-style-type: none;
+}
+
+.clickable.product{
+    width: 350px;
+}
+
+.overflow-hidden{
+    overflow:hidden;
+}
+
+
+.chat-border{
+    border-radius: 5px;
+    border-color: #000 !important;
+}
+
+.small-border{
+    border-radius: 5px;
+}
+
+.chat-field{
+    background-color: white; 
+    height: calc(100vh - 72px - 38px - 81px);
+    overflow-y: scroll; 
+}
+
+.messages-chats{
+    min-width: fit-content;
+    background-color: #e8eae0; 
+    overflow-y: scroll;
+    height: calc(100vh - 72px - 81px);
+}
+
+.messages-container{
+    height: calc(100vh - 72px - 81px);
+    /* flex: 1 1 auto; */
+    margin: 0px;
+}
+
+.chatmessage{
+    font-weight: normal;
+    max-width:75%; 
+    border-radius: 5px; 
+    border-color:gray; 
+}
+
+.background-color-green{
+    background-color: green;
+}
+
+.color-white{
+    color:white;
+}
+
+.color-red{
+    color:red;
+}
+
+.color-green{
+    color:green;
+}
+
+.color-yellow{
+    color:yellow;
+}
+
+.color-black{
+    color:black;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.display-none{
+    display: none;
+}
+
+.shoppingcart-border{
+    border-top: 1px solid grey;
+}
+
+.bg-white{
+    background-color: #dddddd;
+}
+
+.width-auto{
+    width: auto;
+}
+
+.carousel-size{
+    height: 300px;
+    width: auto; 
+}
+
+.text-align-justify{
+    text-align: justify;
+}
+
+.sitemap-container{
+    background-color:#ebffeb; 
+    flex: 1 1 auto;
+}
+
+.pyt-3{
+    padding-top: 3rem;
+}
+
+.bg-lg-green{
+    background-color: rgb(86, 213, 86)
+}
+
+body{
+    min-height: 100vh;
+}
+
+.gallery-image{
+    width:  240px;
+    height: 240px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.notification-image{
+    width:  100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.shoppingcart-image{
+    overflow: hidden;
+    width:  150px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 240px));
+}
+
+.seamless{
+    margin: 0;   
+    padding: 0 !important;
+}
+
+.border-none{
+    border:none;
+}
+
+.material-icons{
+    border-radius: 100px;
+    outline: none;
+    border: none;
+}
+
+.titel{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.property{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    word-break: break-all;
+}
+
+.sold-out{
+    font-size: x-large;
+}
+
+.price{
+    font-size: x-large;
+}
+
+.shoppingcart-titel{
+    font-size:x-large;
+}
+
+.sitemap-url{
+    font-size: large;
+}
+
+.bg-light{ 
+    background-color: lightgrey;
+}
+
+.divider{
+    margin-top: 100px;
+}
+
+.review-wrapper{
+    padding: 24px
+}
+
+.review-titel{
+    font-size: 20px;
+    font-weight: 750;
+    margin-bottom: 5px;
+}
+
+.post-properties{
+    margin-top: 10px;
+    color: rgb(171, 171, 171);
+}
+
+.carousel-image{
+    height: 600px;
+    object-fit: cover;
+}
+
+.filter-box{
+    margin-top: 32px; 
+    padding: none; 
+    float: left;
+    width: 230px;
+}
+
+@media (max-width: 767px){
+    .filter-box{
+        float: top;
+        width: 100%;
+    }
+
+    .justify-content-start{
+        justify-content: center !important;
+    }
+}
+
+.price{
+    font-size: x-large;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.card-body{
+    height: 151px;
+}
+
+.product-titel{
+    margin-bottom: 7px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.clickable{
+    cursor: pointer;
+    position: relative;
+}
+
+.link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.main-container{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info{
+    font-size: large;
+}
+
+.name{
+    color: black;
+    text-decoration: none;
+}
+
+.info-signalizer{
+    padding-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    background-color: gainsboro;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.description{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    word-wrap: break-word;
+}
+
+.edit{
+    font-size: small;
+    margin-right: 5px;
+}
+
+#textfield-description{
+    visibility: hidden;
+    display: none;
+}
+
+.description-input{
+    min-width: 100%;
+    height: 40px;
+}
+#textfield-contactInfo{
+    visibility: hidden;
+    display: none;
+}
+
+.profile-tag{
+    border-radius: 5px;
+    font-size: 40px;
+}
+
+
+.notification{
+    border-radius: 16px;
+    background-color: rgb(233, 233, 233);
+}
+
+.time{
+    font-size: 11px;
+}
+
+.message{
+    font-weight: bold;
+}
+
+.hyperlink{
+    text-decoration: underline;
+} 
+
+/* messages */
+.sender{
+    float: right;
+    background-color: #eae2df;
+}
+
+.message-bar{
+    border-radius: 5px !important;
+}
+
+.active-conversation{
+    background-color: #a5aeab;
+}
+
+.time-sender{
+    float: right;
+    font-size: xx-small;
+}
+
+
+.time-receiver{
+    float:left;
+    font-size: xx-small;
+}
+
+.receiver{
+    float: left;
+    background-color: #f0e5df;
+}
+
+/* orders */
+@media screen and (max-width: 575px) {
+    .col-sm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+} 
+
+/* video controls*/
+.play-button {
+    width: fit-content;
+    background-color: #666;
+    border: medium none;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    left: 0;
+    margin: 0 auto;
+    padding: 8px 16px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 50%;
+}
+
+.height-auto{
+    height: auto;
+}

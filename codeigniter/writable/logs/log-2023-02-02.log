@@ -1,0 +1,33 @@
+CRITICAL - 2023-02-02 12:33:53 --> Call to a member function select() on null
+in APPPATH/Controllers/ShoppingcartController.php on line 66.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 12:34:05 --> Call to a member function select() on null
+in APPPATH/Controllers/ShoppingcartController.php on line 66.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 12:35:07 --> Undefined array key "Quantity"
+in APPPATH/Controllers/ShoppingcartController.php on line 76.
+ 1 APPPATH/Controllers/ShoppingcartController.php(76): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 12:35:51 --> Attempt to read property "Quantity" on array
+in APPPATH/Controllers/ShoppingcartController.php on line 76.
+ 1 APPPATH/Controllers/ShoppingcartController.php(76): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 12:36:07 --> Undefined variable $data
+in APPPATH/Controllers/ShoppingcartController.php on line 75.
+ 1 APPPATH/Controllers/ShoppingcartController.php(75): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

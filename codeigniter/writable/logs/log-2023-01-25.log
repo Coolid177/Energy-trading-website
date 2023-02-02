@@ -1,0 +1,514 @@
+CRITICAL - 2023-01-25 11:24:47 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH/Controllers/ShoppingcartController.php on line 44.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 11:32:11 --> Call to undefined function App\Controllers\vardump()
+in APPPATH/Controllers/ShoppingcartController.php on line 36.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->addProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 11:35:17 --> Call to undefined function App\Controllers\set()
+in APPPATH/Controllers/ShoppingcartController.php on line 36.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->addProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 13:06:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:06:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:06:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:07:00 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:07:00 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:07:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:07:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:07:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:07:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:07:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:07:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:07:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:07:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:07:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-25 13:07:47 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`product_media`, CONSTRAINT `product_media_ibfk_1` FOREIGN KEY (`ProductId`) REFERENCES `products` (`ProductId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingcartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-25 13:11:08 --> Undefined array key 0
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 68.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(68): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 13:11:31 --> Undefined array key 0
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 68.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(68): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 13:14:29 --> Undefined array key 0
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 68.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(68): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 13:16:16 --> Undefined array key 0
+in APPPATH/Controllers/ShoppingcartController.php on line 40.
+ 1 APPPATH/Controllers/ShoppingcartController.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->addProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:11:15 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH/Controllers/ShoppingcartController.php on line 118.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:12:24 --> Attempt to read property "ProductId" on array
+in APPPATH/Controllers/ShoppingcartController.php on line 125.
+ 1 APPPATH/Controllers/ShoppingcartController.php(125): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->placeOrder()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:18:39 --> foreach() argument must be of type array|object, null given
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 24.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:19:39 --> Undefined array key "ProductName"
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 26.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:22:24 --> Attempt to read property "ProductName" on array
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 26.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:23:55 --> Undefined array key "ProductName"
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 27.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:24:41 --> syntax error, unexpected token ";"
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 27.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ShoppingcartController.php(31): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:24:54 --> syntax error, unexpected token ";"
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 27.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ShoppingcartController.php(31): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:27:30 --> Undefined array key "ProductName"
+in APPPATH/Models/ProductModel.php on line 26.
+ 1 APPPATH/Models/ProductModel.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ShoppingcartController.php(131): App\Models\ProductModel->getProductNames()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->placeOrder()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:28:46 --> Undefined array key "ProductId"
+in APPPATH/Controllers/ShoppingcartController.php on line 125.
+ 1 APPPATH/Controllers/ShoppingcartController.php(125): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->placeOrder()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:32:25 --> Undefined variable $ordersModel
+in APPPATH/Controllers/ShoppingcartController.php on line 70.
+ 1 APPPATH/Controllers/ShoppingcartController.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:51:01 --> syntax error, unexpected token "=>", expecting "]"
+in APPPATH/Controllers/ShoppingcartController.php on line 73.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:51:25 --> syntax error, unexpected variable "$productStatisticsModel"
+in APPPATH/Controllers/ShoppingcartController.php on line 76.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:51:58 --> Undefined property: stdClass::$IsActive
+in APPPATH/Controllers/ShoppingcartController.php on line 127.
+ 1 APPPATH/Controllers/ShoppingcartController.php(127): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->placeOrder()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 14:53:35 --> mysqli_sql_exception: Unknown column 'Products.ProductId' in 'where clause' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ProductStatisticsModel.php(27): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ShoppingcartController.php(63): App\Models\ProductStatisticsModel->getProductStatistics()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 14:53:35 --> Call to a member function getResult() on bool
+in APPPATH/Models/ProductStatisticsModel.php on line 27.
+ 1 APPPATH/Controllers/ShoppingcartController.php(63): App\Models\ProductStatisticsModel->getProductStatistics()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 14:53:41 --> mysqli_sql_exception: Unknown column 'Products.ProductId' in 'where clause' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ProductStatisticsModel.php(27): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ShoppingcartController.php(63): App\Models\ProductStatisticsModel->getProductStatistics()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 14:53:41 --> Unknown column 'Products.ProductId' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/ProductStatisticsModel.php(27): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/ShoppingcartController.php(63): App\Models\ProductStatisticsModel->getProductStatistics()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:54:02 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/ShoppingcartController.php on line 73.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 14:54:47 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/ShoppingcartController.php on line 73.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 14:55:18 --> mysqli_sql_exception: Unknown column 'Product_statistics.id' in 'where clause' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 /app/system/BaseModel.php(886): CodeIgniter\Model->doUpdate()
+#6 /app/system/Model.php(693): CodeIgniter\BaseModel->update()
+#7 /app/app/Controllers/ShoppingcartController.php(76): CodeIgniter\Model->update()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-25 14:55:19 --> Unknown column 'Product_statistics.id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(886): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Controllers/ShoppingcartController.php(76): CodeIgniter\Model->update()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->removeOrder()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 16:06:43 --> Call to undefined function get()
+in APPPATH/Views/extras/sitemap.php on line 21.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/BasePagesController.php(14): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\BasePagesController->sitemap()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 16:06:54 --> Call to undefined function get()
+in APPPATH/Views/extras/sitemap.php on line 21.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/BasePagesController.php(14): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\BasePagesController->sitemap()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

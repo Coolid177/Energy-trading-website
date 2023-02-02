@@ -1,0 +1,272 @@
+CRITICAL - 2022-12-15 07:26:46 --> Undefined array key 0
+in APPPATH/Controllers/MessagesController.php on line 31.
+ 1 APPPATH/Controllers/MessagesController.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->createNewChat()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 08:05:26 --> syntax error, unexpected token ":", expecting "]"
+in APPPATH/Config/Routes.php on line 67.
+ 1 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 2 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 08:06:55 --> publicVendorProfileFilter/$1 filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-15 08:35:18 --> mysqli_sql_exception: Column 'ProductId' in field list is ambiguous in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ProductModel.php(32): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ShoppingcartController.php(13): App\Models\ProductModel->getShoppingCart()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-15 08:35:18 --> Column 'ProductId' in field list is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/ProductModel.php(32): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/ShoppingcartController.php(13): App\Models\ProductModel->getShoppingCart()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 08:35:36 --> Undefined array key 2
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 49.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(15): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 09:04:26 --> syntax error, unexpected variable "$items", expecting "("
+in APPPATH/Views/product/products.php on line 2.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ProductController.php(57): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->products()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 09:27:36 --> Undefined variable $_SESSION
+in APPPATH/Filters/completeProfileFilter.php on line 14.
+ 1 APPPATH/Filters/completeProfileFilter.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Filters/Filters.php(173): App\Filters\completeProfileFilter->before()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 10:10:32 --> unlink(Product_uploads/): Is a directory
+in APPPATH/Controllers/ProductController.php on line 126.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ProductController.php(126): unlink()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->deleteProduct()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 10:14:36 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/ProductController.php on line 119.
+ 1 APPPATH/Controllers/ProductController.php(119): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->deleteProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 10:25:42 --> Object of class stdClass could not be converted to string
+in APPPATH/Controllers/ProductController.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->deleteProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 10:26:15 --> Object of class stdClass could not be converted to string
+in APPPATH/Controllers/ProductController.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->deleteProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 10:26:41 --> Object of class stdClass could not be converted to string
+in APPPATH/Controllers/ProductController.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->deleteProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 10:27:01 --> Object of class stdClass could not be converted to string
+in APPPATH/Controllers/ProductController.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->deleteProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 10:29:01 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/ProductController.php on line 124.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->deleteProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-15 14:17:00 --> mysqli_sql_exception: Table 'data.review' doesn't exist in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ProductController.php(45): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ProductController->storeReview()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-15 14:17:00 --> Table 'data.review' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/ProductController.php(45): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->storeReview()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 14:27:08 --> syntax error, unexpected token ",", expecting "]"
+in APPPATH/Controllers/ProductController.php on line 261.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 14:27:27 --> syntax error, unexpected single-quoted string "errors", expecting "]"
+in APPPATH/Controllers/ProductController.php on line 262.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 15:23:20 --> Undefined variable $validation
+in APPPATH/Controllers/ProductController.php on line 215.
+ 1 APPPATH/Controllers/ProductController.php(215): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->store()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 15:23:46 --> Undefined variable $errors
+in APPPATH/Controllers/ProductController.php on line 217.
+ 1 APPPATH/Controllers/ProductController.php(217): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->store()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 15:47:08 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #2 ($code) must be of type ?int, array given, called in /app/app/Controllers/ProductController.php on line 144
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 32.
+ 1 APPPATH/Controllers/ProductController.php(144): CodeIgniter\HTTP\RedirectResponse->to()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 15:47:50 --> CodeIgniter\HTTP\RedirectResponse::with(): Argument #1 ($key) must be of type string, array given, called in /app/app/Controllers/ProductController.php on line 144
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 134.
+ 1 APPPATH/Controllers/ProductController.php(144): CodeIgniter\HTTP\RedirectResponse->with()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 15:50:12 --> Undefined variable $title
+in APPPATH/Views/product/editProduct.php on line 103.
+ 1 APPPATH/Views/product/editProduct.php(103): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/editProduct.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(107): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->editProductView()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 15:50:55 --> Undefined variable $title
+in APPPATH/Views/product/editProduct.php on line 102.
+ 1 APPPATH/Views/product/editProduct.php(102): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/editProduct.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(107): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->editProductView()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 15:51:27 --> Undefined variable $title
+in APPPATH/Views/product/editProduct.php on line 103.
+ 1 APPPATH/Views/product/editProduct.php(103): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/editProduct.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(107): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->editProductView()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 16:13:20 --> Undefined array key 0
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 52.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(52): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(15): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 16:13:25 --> Undefined array key 0
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 52.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(52): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(15): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 16:13:26 --> Undefined array key 0
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 52.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(52): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(15): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 16:13:31 --> Undefined array key 0
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 52.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(52): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(15): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 16:14:52 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/ShoppingcartController.php on line 23.
+ 1 APPPATH/Controllers/ShoppingcartController.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->addProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

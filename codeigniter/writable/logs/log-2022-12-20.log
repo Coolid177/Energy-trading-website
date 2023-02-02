@@ -1,0 +1,410 @@
+CRITICAL - 2022-12-20 06:32:59 --> Undefined array key "max_price"
+in APPPATH/Models/ProductModel.php on line 132.
+ 1 APPPATH/Models/ProductModel.php(132): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ProductController.php(62): App\Models\ProductModel->filterProducts()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->filterProducts()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 07:11:29 --> session_start(): Failed to decode session object. Session has been destroyed
+in SYSTEMPATH/Session/Session.php on line 912.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Session/Session.php(912): session_start()
+ 3 SYSTEMPATH/Session/Session.php(234): CodeIgniter\Session\Session->startSession()
+ 4 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+ 5 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+ 6 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic()
+ 7 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance()
+ 8 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+ 9 SYSTEMPATH/Common.php(931): CodeIgniter\Config\BaseService::__callStatic()
+10 APPPATH/Filters/verifyUserFilter.php(13): session()
+11 SYSTEMPATH/Filters/Filters.php(173): App\Filters\verifyUserFilter->before()
+12 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+13 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 07:24:28 --> Undefined constant "y"
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 164.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/ShoppingcartController.php(26): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 07:31:03 --> syntax error, unexpected token "if"
+in APPPATH/Controllers/ShoppingcartController.php on line 86.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 07:37:53 --> syntax error, unexpected single-quoted string "DeliveryDate", expecting "]"
+in APPPATH/Models/OrdersModel.php on line 15.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Config/Factories.php(155): class_exists()
+ 5 SYSTEMPATH/Config/Factories.php(125): CodeIgniter\Config\Factories::locateClass()
+ 6 SYSTEMPATH/Config/Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH/Common.php(809): CodeIgniter\Config\Factories::models()
+ 8 APPPATH/Controllers/ShoppingcartController.php(24): model()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 07:38:03 --> syntax error, unexpected single-quoted string "DeliveryDate", expecting "]"
+in APPPATH/Config/Validation.php on line 240.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Config/Factories.php(155): class_exists()
+ 5 SYSTEMPATH/Config/Factories.php(125): CodeIgniter\Config\Factories::locateClass()
+ 6 SYSTEMPATH/Common.php(203): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH/Config/Services.php(744): config()
+ 8 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::validation()
+ 9 SYSTEMPATH/BaseModel.php(299): CodeIgniter\Config\BaseService::__callStatic()
+10 SYSTEMPATH/Model.php(141): CodeIgniter\BaseModel->__construct()
+11 SYSTEMPATH/Config/Factories.php(129): CodeIgniter\Model->__construct()
+12 SYSTEMPATH/Config/Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+13 SYSTEMPATH/Common.php(809): CodeIgniter\Config\Factories::models()
+14 APPPATH/Controllers/ShoppingcartController.php(24): model()
+15 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+16 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+17 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+18 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 07:53:08 --> Class "Config\CustomRules" not found
+in SYSTEMPATH/Validation/Validation.php on line 586.
+ 1 SYSTEMPATH/Validation/Validation.php(122): CodeIgniter\Validation\Validation->loadRuleSets()
+ 2 APPPATH/Controllers/ShoppingcartController.php(87): CodeIgniter\Validation\Validation->run()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->placeOrder()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 07:53:58 --> Class "Config\CustomRules" not found
+in SYSTEMPATH/Validation/Validation.php on line 586.
+ 1 SYSTEMPATH/Validation/Validation.php(122): CodeIgniter\Validation\Validation->loadRuleSets()
+ 2 APPPATH/Controllers/ShoppingcartController.php(87): CodeIgniter\Validation\Validation->run()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->placeOrder()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 07:55:21 --> Class "Config\CustomRules" not found
+in SYSTEMPATH/Validation/Validation.php on line 586.
+ 1 SYSTEMPATH/Validation/Validation.php(122): CodeIgniter\Validation\Validation->loadRuleSets()
+ 2 APPPATH/Controllers/ShoppingcartController.php(87): CodeIgniter\Validation\Validation->run()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->placeOrder()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 08:10:54 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH/Config/CustomRules.php on line 12.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH/Validation/Validation.php(586): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Validation/Validation.php(122): CodeIgniter\Validation\Validation->loadRuleSets()
+ 5 APPPATH/Controllers/ShoppingcartController.php(87): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->placeOrder()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 08:19:26 --> Undefined property: stdClass::$deliveryDate
+in APPPATH/Views/profile/Orders.php on line 64.
+ 1 APPPATH/Views/profile/Orders.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/Orders.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProfileController.php(28): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->viewOrders()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 08:42:46 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH/Models/ProductModel.php on line 154.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Config/Factories.php(155): class_exists()
+ 5 SYSTEMPATH/Config/Factories.php(125): CodeIgniter\Config\Factories::locateClass()
+ 6 SYSTEMPATH/Config/Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH/Common.php(809): CodeIgniter\Config\Factories::models()
+ 8 APPPATH/Controllers/ProductController.php(50): model()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->products()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 09:16:03 --> Attempt to read property "Rating" on array
+in APPPATH/Views/product/product.php on line 104.
+ 1 APPPATH/Views/product/product.php(104): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(87): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 09:18:44 --> syntax error, unexpected token "endif", expecting end of file
+in APPPATH/Views/product/product.php on line 125.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ProductController.php(87): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 09:19:22 --> Attempt to read property "Rating" on array
+in APPPATH/Views/product/product.php on line 105.
+ 1 APPPATH/Views/product/product.php(105): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(87): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 09:19:41 --> Undefined array key "Rating"
+in APPPATH/Views/product/product.php on line 105.
+ 1 APPPATH/Views/product/product.php(105): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(87): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 09:19:49 --> Attempt to read property "Rating" on array
+in APPPATH/Views/product/product.php on line 105.
+ 1 APPPATH/Views/product/product.php(105): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(87): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 09:20:14 --> Attempt to read property "Rating" on array
+in APPPATH/Views/product/product.php on line 105.
+ 1 APPPATH/Views/product/product.php(105): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(87): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 09:20:41 --> Attempt to read property "Fname" on array
+in APPPATH/Views/product/product.php on line 121.
+ 1 APPPATH/Views/product/product.php(121): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(87): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 09:23:00 --> Undefined variable $productId
+in APPPATH/Models/ReviewModel.php on line 34.
+ 1 APPPATH/Models/ReviewModel.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ProductController.php(85): App\Models\ReviewModel->canUserLeaveReview()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 10:07:52 --> syntax error, unexpected variable "$routes"
+in APPPATH/Config/Routes.php on line 71.
+ 1 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 2 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 10:07:57 --> syntax error, unexpected variable "$routes"
+in APPPATH/Config/Routes.php on line 71.
+ 1 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 2 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 10:08:52 --> syntax error, unexpected variable "$reviewModel"
+in APPPATH/Controllers/ProductController.php on line 58.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 10:09:39 --> Undefined array key "Rating"
+in APPPATH/Controllers/ProductController.php on line 54.
+ 1 APPPATH/Controllers/ProductController.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateReview()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 10:09:56 --> Call to undefined function App\Controllers\DateTime()
+in APPPATH/Controllers/ProductController.php on line 55.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateReview()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 10:10:19 --> Class "App\Controllers\DateTime" not found
+in APPPATH/Controllers/ProductController.php on line 55.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateReview()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 10:10:37 --> Class "App\Controllers\DateTime" not found
+in APPPATH/Controllers/ProductController.php on line 51.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateReview()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 10:15:52 --> syntax error, unexpected integer "1", expecting ")"
+in APPPATH/Controllers/ProductController.php on line 55.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 10:16:46 --> syntax error, unexpected integer "1", expecting ")"
+in APPPATH/Controllers/ProductController.php on line 57.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 10:17:08 --> Unclosed '{' on line 50 does not match ')'
+in APPPATH/Controllers/ProductController.php on line 57.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-20 10:20:19 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 /app/system/BaseModel.php(886): CodeIgniter\Model->doUpdate()
+#6 /app/system/Model.php(693): CodeIgniter\BaseModel->update()
+#7 /app/app/Controllers/ProductController.php(57): CodeIgniter\Model->update()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ProductController->updateReview()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-20 10:20:19 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(886): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Controllers/ProductController.php(57): CodeIgniter\Model->update()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateReview()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 12:02:09 --> syntax error, unexpected token "foreach"
+in APPPATH/Controllers/NotificationsController.php on line 31.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 12:02:14 --> Undefined variable $productId
+in APPPATH/Controllers/NotificationsController.php on line 30.
+ 1 APPPATH/Controllers/NotificationsController.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\NotificationsController->viewNotifications()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 12:05:05 --> Call to a member function set() on string
+in APPPATH/Controllers/NotificationsController.php on line 40.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\NotificationsController->viewNotifications()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 12:05:42 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Controllers/NotificationsController.php(40): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\NotificationsController->viewNotifications()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 12:08:06 --> time() expects exactly 0 arguments, 1 given
+in APPPATH/Controllers/NotificationsController.php on line 40.
+ 1 APPPATH/Controllers/NotificationsController.php(40): time()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\NotificationsController->viewNotifications()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 12:08:15 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Controllers/NotificationsController.php(40): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\NotificationsController->viewNotifications()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 12:08:45 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, int returned
+in SYSTEMPATH/BaseModel.php on line 1624.
+ 1 SYSTEMPATH/BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray()
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Controllers/NotificationsController.php(40): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\NotificationsController->viewNotifications()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 12:09:13 --> syntax error, unexpected token ","
+in APPPATH/Controllers/NotificationsController.php on line 40.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 12:11:33 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, int returned
+in SYSTEMPATH/BaseModel.php on line 1624.
+ 1 SYSTEMPATH/BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray()
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Controllers/NotificationsController.php(40): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\NotificationsController->viewNotifications()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 12:12:05 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Controllers/NotificationsController.php(40): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\NotificationsController->viewNotifications()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 12:21:11 --> Call to a member function getResult() on bool
+in APPPATH/Models/OrdersModel.php on line 47.
+ 1 APPPATH/Controllers/NotificationsController.php(41): App\Models\OrdersModel->updateNotifications()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\NotificationsController->viewNotifications()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,437 @@
+CRITICAL - 2022-11-29 07:32:40 --> syntax error, unexpected token "return", expecting "function" or "const"
+in APPPATH/Models/ProductModel.php on line 19.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Config/Factories.php(155): class_exists()
+ 5 SYSTEMPATH/Config/Factories.php(125): CodeIgniter\Config\Factories::locateClass()
+ 6 SYSTEMPATH/Config/Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH/Common.php(809): CodeIgniter\Config\Factories::models()
+ 8 APPPATH/Controllers/ProductController.php(11): model()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->products()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:32:46 --> Call to undefined method App\Models\ProductModel::findItems
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/ProductController.php(12): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->products()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:33:16 --> foreach() argument must be of type array|object, null given
+in APPPATH/Views/product/products.php on line 49.
+ 1 APPPATH/Views/product/products.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/products.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->products()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:33:55 --> Undefined variable $db
+in APPPATH/Models/ProductModel.php on line 21.
+ 1 APPPATH/Models/ProductModel.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ProductController.php(12): App\Models\ProductModel->getProducts()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->products()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:34:02 --> Undefined variable $sellerId
+in APPPATH/Models/ProductModel.php on line 22.
+ 1 APPPATH/Models/ProductModel.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ProductController.php(12): App\Models\ProductModel->getProducts()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->products()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:34:52 --> Cannot use object of type stdClass as array
+in APPPATH/Views/product/products.php on line 51.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/ProductController.php(14): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->products()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:35:27 --> Cannot use object of type stdClass as array
+in APPPATH/Views/product/products.php on line 62.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/ProductController.php(14): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->products()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-29 08:07:05 --> mysqli_sql_exception: Unknown column 'Product_media.id' in 'where clause' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/BaseModel.php(524): CodeIgniter\Model->doFind()
+#6 /app/app/Controllers/ProductController.php(29): CodeIgniter\BaseModel->find()
+#7 /app/system/CodeIgniter.php(927): App\Controllers\ProductController->product()
+#8 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-29 08:07:05 --> Unknown column 'Product_media.id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(524): CodeIgniter\Model->doFind()
+ 7 APPPATH/Controllers/ProductController.php(29): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:15:31 --> Attempt to read property "Media_name" on array
+in APPPATH/Views/product/product.php on line 12.
+ 1 APPPATH/Views/product/product.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:16:09 --> Attempt to read property "Media_name" on string
+in APPPATH/Views/product/product.php on line 12.
+ 1 APPPATH/Views/product/product.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(32): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:16:23 --> Unsupported operand types: string - array
+in APPPATH/Views/product/product.php on line 12.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/ProductController.php(32): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:16:36 --> Cannot access offset of type string on string
+in APPPATH/Views/product/product.php on line 12.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/ProductController.php(32): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:17:55 --> Array to string conversion
+in APPPATH/Views/product/product.php on line 10.
+ 1 APPPATH/Views/product/product.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:18:07 --> Attempt to read property "Media_name" on array
+in APPPATH/Views/product/product.php on line 10.
+ 1 APPPATH/Views/product/product.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:18:44 --> Cannot use [] for reading
+in APPPATH/Views/product/product.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-29 08:18:52 --> Cannot access offset of type string on string
+in APPPATH/Views/product/product.php on line 11.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/ProductController.php(31): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:19:13 --> Attempt to read property "Media_name" on string
+in APPPATH/Views/product/product.php on line 11.
+ 1 APPPATH/Views/product/product.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:20:46 --> Array to string conversion
+in APPPATH/Views/product/product.php on line 10.
+ 1 APPPATH/Views/product/product.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:22:28 --> Undefined variable $imageMedia_name
+in APPPATH/Views/product/product.php on line 11.
+ 1 APPPATH/Views/product/product.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-29 10:23:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.Fname, Users.Lname, Title, ProductType, Price, Origin, Description FROM Product' at line 1 in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ProductModel.php(22): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ProductController.php(27): App\Models\ProductModel->getProduct()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ProductController->product()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-29 10:23:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.Fname, Users.Lname, Title, ProductType, Price, Origin, Description FROM Product' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/ProductModel.php(22): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/ProductController.php(27): App\Models\ProductModel->getProduct()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:28:26 --> Undefined array key "VendorId"
+in APPPATH/Views/product/product.php on line 30.
+ 1 APPPATH/Views/product/product.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:28:27 --> Undefined array key "VendorId"
+in APPPATH/Views/product/product.php on line 30.
+ 1 APPPATH/Views/product/product.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:30:04 --> Undefined array key "VendorId"
+in APPPATH/Views/product/product.php on line 30.
+ 1 APPPATH/Views/product/product.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:30:21 --> Undefined array key "t"
+in APPPATH/Views/product/product.php on line 30.
+ 1 APPPATH/Views/product/product.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:30:34 --> Undefined array key "VendorId"
+in APPPATH/Views/product/product.php on line 30.
+ 1 APPPATH/Views/product/product.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:31:18 --> Cannot use object of type stdClass as array
+in APPPATH/Views/product/product.php on line 30.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/ProductController.php(31): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:31:29 --> Undefined array key "VendorFname"
+in APPPATH/Views/product/product.php on line 30.
+ 1 APPPATH/Views/product/product.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:32:12 --> Attempt to read property "VendorFname" on array
+in APPPATH/Views/product/product.php on line 30.
+ 1 APPPATH/Views/product/product.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/product/product.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:43:44 --> Invalid file: profile.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ProfileController.php(48): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->PublicProfile()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:44:05 --> Undefined variable $userData
+in APPPATH/Views/profile/profile.php on line 32.
+ 1 APPPATH/Views/profile/profile.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProfileController.php(48): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->PublicProfile()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 10:44:55 --> Undefined variable $userData
+in APPPATH/Views/profile/profile.php on line 32.
+ 1 APPPATH/Views/profile/profile.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProfileController.php(48): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->PublicProfile()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:01:11 --> publicVendorProfileFilter filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:01:50 --> syntax error, unexpected token "echo", expecting ")"
+in APPPATH/Filters/publicVendorProfileFilter.php on line 15.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH/Filters/Filters.php(166): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:02:10 --> Undefined property: App\Filters\publicVendorProfileFilter::$load
+in APPPATH/Filters/publicVendorProfileFilter.php on line 13.
+ 1 APPPATH/Filters/publicVendorProfileFilter.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:02:30 --> Undefined property: App\Filters\publicVendorProfileFilter::$load
+in APPPATH/Filters/publicVendorProfileFilter.php on line 13.
+ 1 APPPATH/Filters/publicVendorProfileFilter.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:06:13 --> Undefined property: App\Filters\publicVendorProfileFilter::$load
+in APPPATH/Filters/publicVendorProfileFilter.php on line 13.
+ 1 APPPATH/Filters/publicVendorProfileFilter.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:06:30 --> Undefined property: App\Filters\publicVendorProfileFilter::$uri
+in APPPATH/Filters/publicVendorProfileFilter.php on line 14.
+ 1 APPPATH/Filters/publicVendorProfileFilter.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:10:24 --> Undefined property: App\Filters\publicVendorProfileFilter::$input
+in APPPATH/Filters/publicVendorProfileFilter.php on line 13.
+ 1 APPPATH/Filters/publicVendorProfileFilter.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:16:48 --> Call to undefined function App\Filters\uri1_string()
+in APPPATH/Filters/publicVendorProfileFilter.php on line 13.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+ 2 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:17:40 --> Call to a member function getSegment() on string
+in APPPATH/Filters/publicVendorProfileFilter.php on line 13.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+ 2 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:18:01 --> Call to a member function getSegment() on string
+in APPPATH/Filters/publicVendorProfileFilter.php on line 13.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+ 2 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:18:37 --> Call to a member function getSegment() on string
+in APPPATH/Filters/publicVendorProfileFilter.php on line 13.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+ 2 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:19:13 --> Call to a member function getSegment() on string
+in APPPATH/Filters/publicVendorProfileFilter.php on line 13.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+ 2 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:21:16 --> Call to a member function getSegment() on string
+in APPPATH/Filters/publicVendorProfileFilter.php on line 13.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+ 2 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 11:30:28 --> Call to a member function where() on null
+in APPPATH/Filters/publicVendorProfileFilter.php on line 14.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\publicVendorProfileFilter->before()
+ 2 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

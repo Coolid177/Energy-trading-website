@@ -1,0 +1,50 @@
+CRITICAL - 2022-11-30 03:33:43 --> syntax error, unexpected token "!", expecting "("
+in APPPATH/Views/login/home.php on line 3.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/LoginController.php(106): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\LoginController->viewHome()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 09:55:39 --> syntax error, unexpected variable "$product", expecting ")"
+in APPPATH/Views/profile/myproducts.php on line 34.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ProfileController.php(32): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->viewMyProducts()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 14:34:32 --> Undefined constant "App\Controllers\ProductId"
+in APPPATH/Controllers/ProductController.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->deleteProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 16:51:24 --> Attempt to read property "SellerId" on array
+in APPPATH/Controllers/ProductController.php on line 38.
+ 1 APPPATH/Controllers/ProductController.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->deleteProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 16:51:39 --> Undefined array key "SellerId"
+in APPPATH/Controllers/ProductController.php on line 38.
+ 1 APPPATH/Controllers/ProductController.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->deleteProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 16:52:04 --> Attempt to read property "SellerId" on string
+in APPPATH/Controllers/ProductController.php on line 38.
+ 1 APPPATH/Controllers/ProductController.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->deleteProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 17:24:48 --> syntax error, unexpected variable "$routes"
+in APPPATH/Config/Routes.php on line 65.
+ 1 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 2 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

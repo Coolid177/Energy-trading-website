@@ -1,0 +1,544 @@
+CRITICAL - 2022-12-18 03:54:00 --> Undefined array key 0
+in APPPATH/Views/profile/Orders.php on line 42.
+ 1 APPPATH/Views/profile/Orders.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/Orders.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProfileController.php(33): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->viewOrders()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 04:26:54 --> Undefined array key 1
+in APPPATH/Views/profile/Orders.php on line 19.
+ 1 APPPATH/Views/profile/Orders.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/Orders.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProfileController.php(33): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->viewOrders()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-18 05:46:14 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-18 05:46:14 --> Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-18 05:46:14 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-18 05:46:14 --> Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-18 05:46:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-18 05:46:15 --> Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-18 05:46:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-18 05:46:15 --> Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-18 05:47:21 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-18 05:47:21 --> Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-18 05:47:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-18 05:47:49 --> Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-18 05:53:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE) in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-18 05:53:03 --> Cannot add or update a child row: a foreign key constraint fails (`data`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`SendingUserId`) REFERENCES `users` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/ShoppingCartController.php(16): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 06:50:26 --> Undefined array key "SenderId"
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 APPPATH/Controllers/ShoppingcartController.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 06:52:36 --> Undefined array key "SenderId"
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 APPPATH/Controllers/ShoppingcartController.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 06:52:53 --> Undefined array key "SenderId"
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 APPPATH/Controllers/ShoppingcartController.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 06:54:45 --> Undefined array key "SenderId"
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 APPPATH/Controllers/ShoppingcartController.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 06:56:43 --> Undefined array key "SenderId"
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 APPPATH/Controllers/ShoppingcartController.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 06:57:56 --> Undefined array key "SenderId"
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 APPPATH/Controllers/ShoppingcartController.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 06:58:58 --> Undefined array key "SenderId"
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 APPPATH/Controllers/ShoppingcartController.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 06:59:21 --> Undefined array key "SenderId"
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 APPPATH/Controllers/ShoppingcartController.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 07:33:17 --> Undefined array key "ReceivingUserId"
+in APPPATH/Controllers/ShoppingcartController.php on line 14.
+ 1 APPPATH/Controllers/ShoppingcartController.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 07:33:35 --> Undefined array key "ReceivingUserId"
+in APPPATH/Controllers/ShoppingcartController.php on line 14.
+ 1 APPPATH/Controllers/ShoppingcartController.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 07:33:52 --> Undefined array key "ReceivingUserId"
+in APPPATH/Controllers/ShoppingcartController.php on line 14.
+ 1 APPPATH/Controllers/ShoppingcartController.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 07:35:38 --> Undefined array key "SenderId"
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 APPPATH/Controllers/ShoppingcartController.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 07:35:53 --> Undefined array key "ReceivingUserId"
+in APPPATH/Controllers/ShoppingcartController.php on line 14.
+ 1 APPPATH/Controllers/ShoppingcartController.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 07:38:49 --> Undefined array key "SenderId"
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 APPPATH/Controllers/ShoppingcartController.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 07:39:30 --> Cannot access offset of type string on string
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 07:39:51 --> Attempt to read property "SendingUserId" on string
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 APPPATH/Controllers/ShoppingcartController.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:12:20 --> Attempt to read property "ProductId" on array
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:17:37 --> Attempt to read property "ProductId" on array
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:17:50 --> Attempt to read property "ProductId" on array
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:18:15 --> Attempt to read property "ProductId" on array
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:19:27 --> Attempt to read property "ProductId" on array
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:22:03 --> Attempt to read property "ProductId" on array
+in APPPATH/Controllers/ShoppingcartController.php on line 28.
+ 1 APPPATH/Controllers/ShoppingcartController.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:22:23 --> Attempt to assign property "Quantity" on array
+in APPPATH/Controllers/ShoppingcartController.php on line 29.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:23:19 --> Undefined array key "productId"
+in APPPATH/Controllers/ShoppingcartController.php on line 25.
+ 1 APPPATH/Controllers/ShoppingcartController.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:26:53 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH/Controllers/ShoppingcartController.php on line 11.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:27:19 --> Undefined array key "ProductId"
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:27:20 --> Undefined array key "ProductId"
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:27:20 --> Undefined array key "ProductId"
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:27:37 --> Undefined array key "ProductId"
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:27:37 --> Undefined array key "ProductId"
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:27:37 --> Undefined array key "ProductId"
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:27:37 --> Undefined array key "ProductId"
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:27:38 --> Undefined array key "ProductId"
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:27:38 --> Undefined array key "ProductId"
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:27:38 --> Undefined array key "ProductId"
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:35:52 --> Undefined constant "App\Controllers\error"
+in APPPATH/Controllers/ShoppingcartController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:47:45 --> Undefined array key "Quantity"
+in APPPATH/Controllers/ShoppingcartController.php on line 14.
+ 1 APPPATH/Controllers/ShoppingcartController.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:48:25 --> Call to undefined function App\Controllers\parseInt()
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:48:54 --> Call to undefined function App\Controllers\parseInt()
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:49:36 --> Undefined variable $data
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:49:44 --> Undefined variable $data
+in APPPATH/Controllers/ShoppingcartController.php on line 12.
+ 1 APPPATH/Controllers/ShoppingcartController.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:51:45 --> Call to undefined function App\Controllers\type()
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:51:49 --> Call to undefined function App\Controllers\type()
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:51:49 --> Call to undefined function App\Controllers\type()
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 08:55:29 --> Undefined array key "productId"
+in APPPATH/Controllers/ShoppingcartController.php on line 13.
+ 1 APPPATH/Controllers/ShoppingcartController.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->incrementProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 11:23:53 --> Call to undefined function script_tag()
+in APPPATH/Views/templates/footer.php on line 61.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/ProfileController.php(48): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->viewStatistics()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

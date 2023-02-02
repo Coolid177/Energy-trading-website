@@ -1,0 +1,729 @@
+CRITICAL - 2022-12-12 03:10:12 --> Call to a member function where() on null
+in APPPATH/Controllers/MessagesController.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:10:12 --> Call to a member function where() on null
+in APPPATH/Controllers/MessagesController.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 03:11:38 --> mysqli_sql_exception: Unknown column 'ConversationsId' in 'field list' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/BaseModel.php(524): CodeIgniter\Model->doFind()
+#6 /app/system/Model.php(201): CodeIgniter\BaseModel->find()
+#7 /app/system/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+#8 /app/app/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+#9 /app/system/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+#10 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-12 03:11:38 --> Unknown column 'ConversationsId' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(524): CodeIgniter\Model->doFind()
+ 7 SYSTEMPATH/Model.php(201): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+ 9 APPPATH/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 03:11:51 --> mysqli_sql_exception: Unknown column 'ConversationsId' in 'field list' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/BaseModel.php(524): CodeIgniter\Model->doFind()
+#6 /app/system/Model.php(201): CodeIgniter\BaseModel->find()
+#7 /app/system/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+#8 /app/app/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+#9 /app/system/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+#10 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-12 03:11:51 --> Unknown column 'ConversationsId' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(524): CodeIgniter\Model->doFind()
+ 7 SYSTEMPATH/Model.php(201): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+ 9 APPPATH/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 03:12:01 --> mysqli_sql_exception: Unknown column 'ConversationsId' in 'field list' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/BaseModel.php(524): CodeIgniter\Model->doFind()
+#6 /app/system/Model.php(201): CodeIgniter\BaseModel->find()
+#7 /app/system/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+#8 /app/app/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+#9 /app/system/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+#10 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-12 03:12:01 --> Unknown column 'ConversationsId' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(524): CodeIgniter\Model->doFind()
+ 7 SYSTEMPATH/Model.php(201): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+ 9 APPPATH/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 03:12:59 --> mysqli_sql_exception: Unknown column 'ConversationsId' in 'field list' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/BaseModel.php(524): CodeIgniter\Model->doFind()
+#6 /app/system/Model.php(201): CodeIgniter\BaseModel->find()
+#7 /app/system/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+#8 /app/app/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+#9 /app/system/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+#10 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-12 03:12:59 --> Unknown column 'ConversationsId' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(524): CodeIgniter\Model->doFind()
+ 7 SYSTEMPATH/Model.php(201): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+ 9 APPPATH/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 03:13:15 --> mysqli_sql_exception: Unknown column 'ConversationsId' in 'field list' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/BaseModel.php(524): CodeIgniter\Model->doFind()
+#6 /app/system/Model.php(201): CodeIgniter\BaseModel->find()
+#7 /app/system/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+#8 /app/app/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+#9 /app/system/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+#10 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-12 03:13:15 --> Unknown column 'ConversationsId' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(524): CodeIgniter\Model->doFind()
+ 7 SYSTEMPATH/Model.php(201): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+ 9 APPPATH/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 03:14:17 --> mysqli_sql_exception: Unknown column 'ConversationsId' in 'field list' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/BaseModel.php(524): CodeIgniter\Model->doFind()
+#6 /app/system/Model.php(201): CodeIgniter\BaseModel->find()
+#7 /app/system/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+#8 /app/app/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+#9 /app/system/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+#10 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-12 03:14:17 --> Unknown column 'ConversationsId' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(524): CodeIgniter\Model->doFind()
+ 7 SYSTEMPATH/Model.php(201): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+ 9 APPPATH/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 03:14:22 --> mysqli_sql_exception: Unknown column 'ConversationsId' in 'field list' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/BaseModel.php(524): CodeIgniter\Model->doFind()
+#6 /app/system/Model.php(201): CodeIgniter\BaseModel->find()
+#7 /app/system/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+#8 /app/app/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+#9 /app/system/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+#10 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-12 03:14:22 --> Unknown column 'ConversationsId' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(524): CodeIgniter\Model->doFind()
+ 7 SYSTEMPATH/Model.php(201): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH/BaseModel.php(555): CodeIgniter\Model->doFindColumn()
+ 9 APPPATH/Controllers/MessagesController.php(24): CodeIgniter\BaseModel->findColumn()
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:16:29 --> syntax error, unexpected token "else"
+in APPPATH/Controllers/MessagesController.php on line 27.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:20:41 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH/Controllers/MessagesController.php on line 36.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:20:42 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH/Controllers/MessagesController.php on line 36.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:41:05 --> Undefined variable $conversationModel
+in APPPATH/Controllers/MessagesController.php on line 30.
+ 1 APPPATH/Controllers/MessagesController.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 03:41:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '), 'test')' at line 1 in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/MessagesController.php(39): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-12 03:41:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '), 'test')' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/MessagesController.php(39): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:42:32 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Database/Query.php on line 329.
+ 1 SYSTEMPATH/Database/Query.php(329): implode()
+ 2 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds()
+ 3 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 9 APPPATH/Controllers/MessagesController.php(39): CodeIgniter\Model->insert()
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:44:39 --> syntax error, unexpected token "=>", expecting ")"
+in APPPATH/Controllers/MessagesController.php on line 25.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:44:48 --> syntax error, unexpected token "=>", expecting ")"
+in APPPATH/Controllers/MessagesController.php on line 25.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:45:13 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/MessagesController.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:45:57 --> Undefined variable $chatId
+in APPPATH/Controllers/MessagesController.php on line 42.
+ 1 APPPATH/Controllers/MessagesController.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:48:27 --> syntax error, unexpected variable "$chat", expecting "," or ";"
+in APPPATH/Views/profile/messages.php on line 7.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/MessagesController.php(28): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:48:40 --> Undefined property: stdClass::$ReceivingUserId
+in APPPATH/Views/profile/messages.php on line 8.
+ 1 APPPATH/Views/profile/messages.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(28): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:52:16 --> Attempt to read property "SendByUserId" on array
+in APPPATH/Views/profile/messages.php on line 21.
+ 1 APPPATH/Views/profile/messages.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(28): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:52:37 --> Attempt to read property "Message" on array
+in APPPATH/Views/profile/messages.php on line 24.
+ 1 APPPATH/Views/profile/messages.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(28): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:54:36 --> Undefined variable $message
+in APPPATH/Views/profile/messages.php on line 22.
+ 1 APPPATH/Views/profile/messages.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(28): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:54:50 --> Undefined variable $message
+in APPPATH/Views/profile/messages.php on line 22.
+ 1 APPPATH/Views/profile/messages.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(28): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:18:43 --> Undefined array key 0
+in APPPATH/Controllers/MessagesController.php on line 11.
+ 1 APPPATH/Controllers/MessagesController.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:21:37 --> Undefined array key 0
+in APPPATH/Controllers/MessagesController.php on line 17.
+ 1 APPPATH/Controllers/MessagesController.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:21:46 --> Undefined array key 0
+in APPPATH/Controllers/MessagesController.php on line 17.
+ 1 APPPATH/Controllers/MessagesController.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:24:21 --> syntax error, unexpected token "=", expecting "]"
+in APPPATH/Controllers/MessagesController.php on line 16.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:24:33 --> Undefined array key 0
+in APPPATH/Controllers/MessagesController.php on line 20.
+ 1 APPPATH/Controllers/MessagesController.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:24:53 --> Call to a member function where() on null
+in APPPATH/Controllers/MessagesController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:25:31 --> CodeIgniter\BaseModel::findColumn(): Argument #1 ($columnName) must be of type string, array given, called in /app/app/Controllers/MessagesController.php on line 16
+in SYSTEMPATH/BaseModel.php on line 549.
+ 1 APPPATH/Controllers/MessagesController.php(16): CodeIgniter\BaseModel->findColumn()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:27:02 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH/Controllers/MessagesController.php on line 16.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:29:50 --> Undefined variable $chat
+in APPPATH/Views/profile/messages.php on line 7.
+ 1 APPPATH/Views/profile/messages.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(25): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:30:12 --> Undefined variable $messages
+in APPPATH/Views/profile/messages.php on line 28.
+ 1 APPPATH/Views/profile/messages.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(25): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:30:55 --> Undefined array key 0
+in APPPATH/Controllers/MessagesController.php on line 33.
+ 1 APPPATH/Controllers/MessagesController.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:31:44 --> Undefined array key 0
+in APPPATH/Controllers/MessagesController.php on line 33.
+ 1 APPPATH/Controllers/MessagesController.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->sendMessage()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:32:48 --> Undefined property: stdClass::$sendTime
+in APPPATH/Views/profile/messages.php on line 40.
+ 1 APPPATH/Views/profile/messages.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(25): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:33:55 --> Undefined property: stdClass::$sendTime
+in APPPATH/Views/profile/messages.php on line 40.
+ 1 APPPATH/Views/profile/messages.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(25): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:34:15 --> Undefined variable $vendorId
+in APPPATH/Views/profile/messages.php on line 48.
+ 1 APPPATH/Views/profile/messages.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(25): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:38:48 --> Undefined variable $conversationsModel
+in APPPATH/Controllers/MessagesController.php on line 8.
+ 1 APPPATH/Controllers/MessagesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:38:58 --> Undefined variable $vendorId
+in APPPATH/Views/profile/messages.php on line 48.
+ 1 APPPATH/Views/profile/messages.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 06:39:55 --> syntax error, unexpected token "endif", expecting end of file
+in APPPATH/Views/profile/messages.php on line 59.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/MessagesController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:09:24 --> Array to string conversion
+in APPPATH/Models/ConversationsModel.php on line 24.
+ 1 APPPATH/Models/ConversationsModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MessagesController.php(9): App\Models\ConversationsModel->getIds()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:10:59 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/ConversationsModel.php on line 24.
+ 1 APPPATH/Models/ConversationsModel.php(24): join()
+ 2 APPPATH/Controllers/MessagesController.php(9): App\Models\ConversationsModel->getIds()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:12:21 --> Array to string conversion
+in APPPATH/Models/ConversationsModel.php on line 25.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Models/ConversationsModel.php(25): join()
+ 3 APPPATH/Controllers/MessagesController.php(9): App\Models\ConversationsModel->getIds()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:12:51 --> Array to string conversion
+in APPPATH/Models/ConversationsModel.php on line 26.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Models/ConversationsModel.php(26): join()
+ 3 APPPATH/Controllers/MessagesController.php(9): App\Models\ConversationsModel->getIds()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:13:16 --> json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH/Models/ConversationsModel.php on line 24.
+ 1 APPPATH/Models/ConversationsModel.php(24): json_decode()
+ 2 APPPATH/Controllers/MessagesController.php(9): App\Models\ConversationsModel->getIds()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:13:58 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/ConversationsModel.php on line 28.
+ 1 APPPATH/Models/ConversationsModel.php(28): join()
+ 2 APPPATH/Controllers/MessagesController.php(9): App\Models\ConversationsModel->getIds()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:15:14 --> Attempt to read property "ReceivingUserId" on array
+in APPPATH/Models/ConversationsModel.php on line 24.
+ 1 APPPATH/Models/ConversationsModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MessagesController.php(9): App\Models\ConversationsModel->getIds()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:15:28 --> Undefined array key "ReceivingUserId"
+in APPPATH/Models/ConversationsModel.php on line 24.
+ 1 APPPATH/Models/ConversationsModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MessagesController.php(9): App\Models\ConversationsModel->getIds()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:16:40 --> syntax error, unexpected token "foreach"
+in APPPATH/Models/ConversationsModel.php on line 25.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Config/Factories.php(155): class_exists()
+ 5 SYSTEMPATH/Config/Factories.php(125): CodeIgniter\Config\Factories::locateClass()
+ 6 SYSTEMPATH/Config/Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH/Common.php(809): CodeIgniter\Config\Factories::models()
+ 8 APPPATH/Controllers/MessagesController.php(8): model()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:18:30 --> Undefined property: stdClass::$ReceivingUserid
+in APPPATH/Views/profile/messages.php on line 16.
+ 1 APPPATH/Views/profile/messages.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:20:15 --> Undefined property: stdClass::$ReceivingUserid
+in APPPATH/Views/profile/messages.php on line 16.
+ 1 APPPATH/Views/profile/messages.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:20:29 --> Undefined property: stdClass::$ReceivingUserId
+in APPPATH/Views/profile/messages.php on line 16.
+ 1 APPPATH/Views/profile/messages.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 07:28:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ConversationsModel.php(29): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/MessagesController.php(9): App\Models\ConversationsModel->getIds()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 07:28:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/ConversationsModel.php(29): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/MessagesController.php(9): App\Models\ConversationsModel->getIds()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:29:34 --> foreach() argument must be of type array|object, null given
+in APPPATH/Views/profile/messages.php on line 13.
+ 1 APPPATH/Views/profile/messages.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->viewMessages()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 07:30:41 --> Undefined variable $UserId
+in APPPATH/Views/profile/messages.php on line 8.
+ 1 APPPATH/Views/profile/messages.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/messages.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MessagesController.php(33): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\MessagesController->createNewChat()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 08:45:03 --> Undefined array key "new_phone_number"
+in APPPATH/Controllers/ProfileController.php on line 67.
+ 1 APPPATH/Controllers/ProfileController.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->updateProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 08:45:27 --> Undefined array key "new_phone_number"
+in APPPATH/Controllers/ProfileController.php on line 67.
+ 1 APPPATH/Controllers/ProfileController.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->updateProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

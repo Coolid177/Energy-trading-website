@@ -1,0 +1,305 @@
+CRITICAL - 2022-12-07 02:55:21 --> syntax error, unexpected variable "$routes"
+in APPPATH/Config/Routes.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 2 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 02:57:26 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH/Controllers/ShoppingcartController.php on line 16.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 03:15:57 --> Call to undefined method App\Models\ProductModel::getShoppinCart
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/ShoppingcartController.php(9): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 03:17:21 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH/Controllers/ShoppingcartController.php on line 23.
+ 1 APPPATH/Controllers/ShoppingcartController.php(23): array_push()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->addProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 03:17:39 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH/Controllers/ShoppingcartController.php on line 23.
+ 1 APPPATH/Controllers/ShoppingcartController.php(23): array_push()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->addProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 03:26:56 --> Undefined array key "productId"
+in APPPATH/Controllers/ShoppingcartController.php on line 24.
+ 1 APPPATH/Controllers/ShoppingcartController.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->addProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 03:32:23 --> Undefined variable $productId
+in APPPATH/Models/ProductModel.php on line 23.
+ 1 APPPATH/Models/ProductModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 03:33:33 --> syntax error, unexpected token "foreach"
+in APPPATH/Models/ProductModel.php on line 24.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Config/Factories.php(155): class_exists()
+ 5 SYSTEMPATH/Config/Factories.php(125): CodeIgniter\Config\Factories::locateClass()
+ 6 SYSTEMPATH/Config/Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH/Common.php(809): CodeIgniter\Config\Factories::models()
+ 8 APPPATH/Controllers/ShoppingcartController.php(8): model()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 03:42:28 --> Array to string conversion
+in APPPATH/Models/ProductModel.php on line 28.
+ 1 APPPATH/Models/ProductModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 03:47:00 --> Array to string conversion
+in APPPATH/Models/ProductModel.php on line 28.
+ 1 APPPATH/Models/ProductModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 03:52:38 --> syntax error, unexpected token "=>", expecting ")"
+in APPPATH/Models/ProductModel.php on line 25.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Config/Factories.php(155): class_exists()
+ 5 SYSTEMPATH/Config/Factories.php(125): CodeIgniter\Config\Factories::locateClass()
+ 6 SYSTEMPATH/Config/Factories.php(86): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH/Common.php(809): CodeIgniter\Config\Factories::models()
+ 8 APPPATH/Controllers/ShoppingcartController.php(8): model()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 03:54:40 --> Array to string conversion
+in APPPATH/Models/ProductModel.php on line 29.
+ 1 APPPATH/Models/ProductModel.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 03:55:51 --> Undefined variable $ids
+in APPPATH/Models/ProductModel.php on line 28.
+ 1 APPPATH/Models/ProductModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:56:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1, 1, 2' at line 1 in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ProductModel.php(29): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:56:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1, 1, 2' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/ProductModel.php(29): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:57:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'array(1, 1, 2)' at line 1 in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ProductModel.php(29): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:57:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'array(1, 1, 2)' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/ProductModel.php(29): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 04:04:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.Media_name FROM Products, (SELECT MIN(Product_media.Media_name) as Media_name F' at line 1 in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ProductModel.php(29): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 04:04:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.Media_name FROM Products, (SELECT MIN(Product_media.Media_name) as Media_name F' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/ProductModel.php(29): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 04:15:47 --> Undefined variable $image
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 11.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 04:19:06 --> Cannot use object of type stdClass as array
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 12.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/ShoppingcartController.php(11): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 04:34:31 --> Undefined property: stdClass::$Aardgas
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 22.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 08:57:16 --> syntax error, unexpected identifier "i", expecting ";"
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 8.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ShoppingcartController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 08:57:56 --> syntax error, unexpected token "=", expecting ";"
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 8.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ShoppingcartController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 08:58:39 --> syntax error, unexpected variable "$i", expecting ";"
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 8.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ShoppingcartController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 08:58:57 --> Undefined variable $item
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 14.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 08:59:10 --> Trying to access array offset on value of type null
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 33.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 09:00:06 --> Attempt to read property "Quantity" on array
+in APPPATH/Views/shoppingcart/shoppingcart.php on line 33.
+ 1 APPPATH/Views/shoppingcart/shoppingcart.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/shoppingcart/shoppingcart.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ShoppingcartController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 14:55:03 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /app/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /app/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/app/Models/ProductModel.php(29): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+#5 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+#6 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /app/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /app/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/app/Models/ProductModel.php(29): CodeIgniter\Database\BaseConnection->query()
+#3 /app/app/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+#4 /app/system/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+#5 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-07 14:55:03 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ProductModel.php(29): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/ShoppingcartController.php(9): App\Models\ProductModel->getShoppinCart()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ShoppingcartController->viewShoppingcart()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

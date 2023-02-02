@@ -1,0 +1,156 @@
+CRITICAL - 2022-12-01 03:08:33 --> syntax error, unexpected token ";"
+in APPPATH/Views/profile/editProduct.php on line 14.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ProductController.php(43): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->editProductView()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 03:08:49 --> syntax error, unexpected token ";"
+in APPPATH/Views/profile/editProduct.php on line 14.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ProductController.php(44): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->editProductView()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 03:11:07 --> Attempt to assign property "productId" on array
+in APPPATH/Controllers/ProductController.php on line 38.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->editProductView()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 03:11:40 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/ProductController.php on line 38.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->editProductView()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 03:41:25 --> Unsupported operand types: int / array
+in APPPATH/Views/profile/editProduct.php on line 79.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/ProductController.php(43): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->editProductView()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 06:28:17 --> syntax error, unexpected identifier "Media_name", expecting ")"
+in APPPATH/Views/profile/editProduct.php on line 83.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ProductController.php(43): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->editProductView()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 06:50:00 --> Undefined property: stdClass::$ProductId
+in APPPATH/Views/profile/editProduct.php on line 15.
+ 1 APPPATH/Views/profile/editProduct.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile/editProduct.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/ProductController.php(43): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->editProductView()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 08:06:49 --> syntax error, unexpected variable "$dataModel"
+in APPPATH/Controllers/ProductController.php on line 58.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 08:11:06 --> syntax error, unexpected token ")"
+in APPPATH/Controllers/ProductController.php on line 76.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 08:11:21 --> Too few arguments to function CodeIgniter\HTTP\IncomingRequest::getFileMultiple(), 0 passed in /app/app/Controllers/ProductController.php on line 61 and exactly 1 expected
+in SYSTEMPATH/HTTP/IncomingRequest.php on line 735.
+ 1 APPPATH/Controllers/ProductController.php(61): CodeIgniter\HTTP\IncomingRequest->getFileMultiple()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 08:14:04 --> Too few arguments to function CodeIgniter\HTTP\IncomingRequest::getFileMultiple(), 0 passed in /app/app/Controllers/ProductController.php on line 61 and exactly 1 expected
+in SYSTEMPATH/HTTP/IncomingRequest.php on line 735.
+ 1 APPPATH/Controllers/ProductController.php(61): CodeIgniter\HTTP\IncomingRequest->getFileMultiple()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 08:18:02 --> Undefined array key "delete_image"
+in APPPATH/Controllers/ProductController.php on line 85.
+ 1 APPPATH/Controllers/ProductController.php(85): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 08:20:26 --> Undefined array key "delete_image"
+in APPPATH/Controllers/ProductController.php on line 91.
+ 1 APPPATH/Controllers/ProductController.php(91): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 08:21:21 --> Undefined variable $primaryKey
+in APPPATH/Controllers/ProductController.php on line 71.
+ 1 APPPATH/Controllers/ProductController.php(71): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 08:21:42 --> Undefined variable $IsThumbnail
+in APPPATH/Controllers/ProductController.php on line 73.
+ 1 APPPATH/Controllers/ProductController.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateProduct()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 08:21:59 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 /app/system/BaseModel.php(984): CodeIgniter\Model->doDelete()
+#6 /app/app/Controllers/ProductController.php(86): CodeIgniter\BaseModel->delete()
+#7 /app/system/CodeIgniter.php(927): App\Controllers\ProductController->updateProduct()
+#8 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-01 08:21:59 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(984): CodeIgniter\Model->doDelete()
+ 7 APPPATH/Controllers/ProductController.php(86): CodeIgniter\BaseModel->delete()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->updateProduct()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 11:24:15 --> syntax error, unexpected token ";"
+in APPPATH/Views/product/product.php on line 14.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ProductController.php(31): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProductController->product()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

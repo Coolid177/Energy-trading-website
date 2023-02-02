@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1674823626;_ci_previous_url|s:58:"http://localhost:8080/index.php/profile/myProducts/edit/28";isVendor|s:1:"1";Email|s:4:"Rune";UserId|s:2:"29";LoggedIn|b:1;ShoppingCart|a:1:{i:0;a:2:{s:9:"ProductId";s:2:"29";s:8:"Quantity";i:1;}}failed|s:45:"product must have at least one image or video";__ci_vars|a:1:{s:6:"failed";s:3:"old";}

@@ -1,0 +1,22 @@
+CRITICAL - 2022-12-21 09:09:59 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/ProductModel.php on line 60.
+ 1 APPPATH/Controllers/ProfileController.php(27): App\Models\ProductModel->getOrderProducts()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->viewOrders()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-21 09:11:55 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/ProductModel.php on line 60.
+ 1 APPPATH/Controllers/ProfileController.php(27): App\Models\ProductModel->getOrderProducts()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->viewOrders()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-21 09:12:16 --> Object of class stdClass could not be converted to int
+in APPPATH/Models/ProductModel.php on line 58.
+ 1 APPPATH/Models/ProductModel.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ProfileController.php(27): App\Models\ProductModel->getOrderProducts()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ProfileController->viewOrders()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
